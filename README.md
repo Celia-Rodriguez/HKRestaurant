@@ -41,7 +41,7 @@ Para llevar a cabo este proyecto he utilizado:
       - CSS
       - Javascript 
 - Framworks
-      - React
+      - React  
    
 ## Auditoría y Créditos 
 
