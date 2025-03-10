@@ -1,0 +1,71 @@
+/* ------ SECTION DONDE ESTAMOS ----- */
+.cuerpo .parapedir{
+    display: grid;
+    grid-template-rows: minmax(100px, 150px) 800px;
+}
+.cuerpo .parapedir_titulo{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/img/barra_2.svg');
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 8px; */
+}
+.cuerpo .parapedir .parapedir_titulo h1{
+    font-family: 'Edo';
+    font-size: 80px;
+    color: var(--gold);
+    font-weight: 300;
+}
+.cuerpo .parapedir .parapedir_contenedor{
+    display: grid;
+    grid-template-columns: 1fr 400px 400px 1fr;
+    grid-template-rows: 50px 150px 100px 50px 80px 100px;
+    padding: 100px 5px;
+    place-items: center;
+}
+.cuerpo .parapedir .parapedir_contenedor h2{
+    font-family: 'Edo';
+    color: var(--darkBlue);
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.cuerpo .parapedir .parapedir_contenedor .line_horario{
+   width: 100%;
+   background-color: var(--gold);
+   height: 5px;
+   grid-area: 3/2/3/4;
+}
+.cuerpo .parapedir .parapedir_contenedor h3, p{
+    margin-bottom: 1rem;
+    margin-top: 10px;
+}
+.parapedir_contenedor .horario_titulo{
+    grid-area: 1/2/1/4;
+}
+.cuerpo .parapedir .parapedir_contenedor .parapedir_horario{
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    margin-top: 35px;
+}
+.cuerpo .parapedir .parapedir_contenedor .LaJ{
+    grid-area: 2/2/2/3;
+}
+.cuerpo .parapedir .parapedir_contenedor .VaD{
+    grid-area: 2/3/2/4;
+}
+.cuerpo .parapedir .parapedir_contenedor .opciones_titulo{
+    grid-area:4/2/4/4;
+}
+.cuerpo .parapedir .parapedir_contenedor .telefono{
+    grid-area: 5/2/5/3;
+
+}
+.cuerpo .parapedir .parapedir_contenedor .direccion{
+    grid-area: 5/3/5/4;
+}

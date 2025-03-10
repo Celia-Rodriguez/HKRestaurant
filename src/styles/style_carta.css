@@ -1,0 +1,354 @@
+/* ------ FUENTES ----- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+@font-face {
+   font-family: 'OneBrush';
+   src: url('../fonts/OneBrush.otf');
+}
+@font-face {
+   font-family: 'Edo';
+   src: url('../fonts/edosz.ttf');
+}
+/* ------ COLORES ----- */
+:root{
+   --lightyellow: #fef3a3;
+   --gold: #efd46b;
+   --darkRed: #8c0327;
+   --red: #a60303;
+   --darkBlue: #0c3559;
+   --txtBlack: black;
+}
+/* ------ ESTILOS GLOBALES ----- */
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body{
+   font-family: 'Nunito', sans-serif;
+   color: var(--txtBlack);
+}
+/* ------ CABECERA  ----- */
+.cabecera{
+   height: 90px;
+   background-color: var(--darkBlue);
+   padding: 10px 200px;
+   font-family: 'Edo', sans-serif;
+   box-shadow:  -1px 5px 5px var(--darkBlue);
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
+.cabecera .mainMenu{
+   display: grid;
+   grid-template-columns: 2fr 1fr 2fr;
+  text-align: center;
+}
+.cabecera .mainMenu .nav-links{
+    display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   list-style: none;
+}
+.cabecera .mainMenu .nav-links li{
+   font-size: 1.5rem;
+   font-weight: 400;
+   letter-spacing: 1px;
+}
+.cabecera .mainMenu .nav-links li a{
+   text-decoration: none;
+   color: var(--gold);
+}
+.cabecera .mainMenu .logo{
+   grid-area: 1/2/1/3;
+}
+.cabecera .mainMenu .logo img{
+   cursor: pointer;
+   margin-top: 15px;
+   height: 50px;
+}
+/*  ------ Animaciones cabecera ------ */
+
+.cabecera .mainMenu .nav-links li a:hover{
+   color: var(--lightyellow);
+   font-size: 2rem;
+}
+
+/*MENU RESPONNSIVE*/
+.cabecera .mainMenu-responsive{
+   display: grid;
+   grid-template-columns:  1fr 1fr;
+  text-align: center;
+  display: none;
+}
+.cabecera .mainMenu-responsive .nav-links-responsive{
+    display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   list-style: none;
+}
+.cabecera .mainMenu-responsive .nav-links-responsive li{
+   font-size: 1.5rem;
+   font-weight: 400;
+   letter-spacing: 1px;
+}
+.cabecera .mainMenu-responsive .nav-links-responsive li a{
+   text-decoration: none;
+   color: var(--gold);
+}
+.cabecera .mainMenu-responsive .logo{
+   grid-area: 1/1/1/2;
+}
+.cabecera .mainMenu-responsive .logo img{
+   cursor: pointer;
+   margin-top: 15px;
+   height: 50px;
+}
+
+.cabecera .mainMenu-responsive .navbar-toggle{
+   cursor: pointer;
+   font-size: 40px;
+   color: var(--gold);
+   background-color: transparent;
+   border: none;
+   padding: 0 10px;
+}
+/*  ------ Animaciones cabecera ------ */
+.cabecera .mainMenu-responsive .nav-links-responsive li a:hover{
+   transition: 0.2s;
+   color: var(--lightyellow);
+   font-size: 2rem;
+
+}
+.cabecera .mainMenu-responsive .navbar-toggle:hover{
+   transform: scale(1.3);
+   transition: 0.2s;
+   color: var(--lightyellow);
+}
+/* ------ MAIN  ----- */
+.cuerpo{
+   display: grid;
+   grid-template-areas:
+   "homePage"
+   "showPlatos"
+   "aboutUs"
+   "situacion";
+   margin-top: 80px;
+}
+/* ------ SECTION HOME PAGE  ----- */
+.cuerpo .homePage .img-homePage{
+   grid-area: 1/1/1/4;
+   width: 100%;
+   height: 100% ;
+   object-fit: cover;
+   z-index: -1;
+}
+.line{
+   width: 100%;
+   background-color: var(--red);
+   height: 10px;
+   margin-top: -8px;
+}
+/* ------ SECTION CARTA ----- */
+.cuerpo .carta{
+   display: grid;
+   grid-template-rows: minmax(100px, 150px) auto;
+}
+.cuerpo .carta_titulo{
+       width: 100%;
+       height: 100%;
+       background-image: url('../img/barra_2.svg');
+       background-position: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+.cuerpo .carta .carta_titulo h1{
+    font-family: 'Edo';
+    font-size: 80px;
+    color: var(--gold);
+    font-weight: 300;
+}
+.cuerpo .carta .contenedor-carta{
+   display: flex;
+   flex-direction: column;
+   padding: 100px 300px;
+}
+.cuerpo .contenedor-carta h2{
+   font-family: 'Edo';
+   color: var(--darkBlue);
+   font-size: 40px;
+   border-bottom: 4px solid var(--gold);
+}
+.cuerpo .contenedor-carta .carta-entrantes{
+   display: grid;
+   margin-bottom: 30px;
+}
+.cuerpo .contenedor-carta .carta-entrantes .titulo-seccion-carta{
+   grid-area: 1/1/2/5;
+   place-self: center;
+   margin-bottom: 20px;
+}
+.cuerpo .contenedor-carta .carta-entrantes .carta-plato{
+   padding: 20px;
+   margin: 10px;
+}
+
+.cuerpo .contenedor-carta .carta-entrantes .carta-plato .plato{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: baseline;
+ margin-bottom: 5px;
+}
+.cuerpo .contenedor-carta .carta-entrantes .carta-plato .plato h3{
+   font-size: 17px ;
+}
+.cuerpo .contenedor-carta .carta-entrantes .carta-plato .plato h4{
+   font-size: 16px;
+   margin-left: 5px;
+} 
+.cuerpo .contenedor-carta .carta-entrantes .carta-plato p{
+   font-size: 14px;
+}
+
+/* ------ SECTION ALERGENOS----- */
+.cuerpo .alergenos{
+   display: grid;
+   grid-template-rows: minmax(200px, auto);
+   place-content: center;
+   /* background-color: var(--lightyellow); */
+}
+.cuerpo .alergenos img{
+   height: 250px;
+}
+
+/* ------ FOOTER ----- */
+.pie{
+   margin-top: 8px;
+   background-color: var(--darkBlue);
+   font-size: 1rem;
+   letter-spacing: 1px;
+   color: var(--gold);
+   height: 200px;
+   display: flex; flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   padding: 50px 50px;
+   border-top: 3px solid #fc7e12;
+}
+.pie img{
+  padding-left: 40px;
+   cursor: pointer;
+   height: 50px;
+}
+.pie .div-pie{
+   margin: auto;
+}
+.pie .div-pie p{
+   cursor: pointer;
+   margin-bottom: 1rem;
+}
+.pie .div-pie p:hover{
+   color: white;
+}
+
+
+/* --------- RESPONSIVE --------- */
+
+@media screen and (max-width: 768px){
+   /* ------ CABECERA  ----- */
+   .cabecera{
+       height: 70px;
+       padding: 10px 20px;
+   }
+   .cabecera .mainMenu{
+       display: none;
+   }
+   .cabecera .mainMenu-responsive{
+       display: grid;
+   }
+   .cabecera .mainMenu-responsive .nav-links-responsive li{
+       font-size: 1.2rem;
+       letter-spacing: 1px;
+       margin: 20px 15px;
+   }
+   .cabecera .mainMenu-responsive .logo img{
+       height: 30px;
+   }
+   .cabecera .mainMenu-responsive .nav-links-responsive{
+       display: flex;
+       flex-direction: column;
+       background-color: var(--darkBlue);
+       position: fixed;
+       width: 100%;
+       align-items: center;
+       padding: 20px 0;
+       left: -100%; 
+       top: 70px;
+       top: 70px;
+        transition: left 0.3s;
+       z-index: 0; 
+   }
+   .cabecera .mainMenu-responsive .nav-links-responsive li{
+       line-height: 40px;
+   }
+   .cabecera .mainMenu-responsive .navbar-toggle{
+       display: block; 
+   }
+   .cabecera .mainMenu-responsive .nav-links--visible{
+       left: 0;
+   }
+   /* MAIN*/
+   .cuerpo{
+       margin-top: 70px;
+   }
+/* ------ SECTION CARTA ----- */
+.cuerpo .carta{
+   grid-template-rows: 100px auto;
+}
+.cuerpo .carta .carta_titulo h1{
+    font-size: 35px;
+}
+.cuerpo .carta .contenedor-carta{
+   padding: 50px 50px;
+}
+.cuerpo .contenedor-carta h2{
+   font-size:35px;
+}
+.cuerpo .contenedor-carta .carta-entrantes{
+   display: block;
+   margin-bottom: 30px;
+}
+/* ------ SECTION ALERGENOS----- */
+.cuerpo .alergenos{
+   grid-template-rows: 100px;
+}
+.cuerpo .alergenos img{
+   height: 97%;
+}
+/* ------ FOOTER ----- */
+.pie{
+   margin-top: -8px;
+   background-color: var(--darkBlue);
+   font-size: 1rem;
+   letter-spacing: 1px;
+   color: var(--gold);
+   height: 200px;
+   display: flex; flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   padding: 50px 20px;
+   border-top: 3px solid #fc7e12;
+}
+.pie img{
+   margin: auto;
+    height: 30px;
+    padding-left: 0;
+}
+.pie .div-pie p{
+  font-size: 0.9rem;
+}
+
+}/*RESPONSIVE*/

@@ -1,0 +1,127 @@
+/* ------ SECTION CARTA ----- */
+.cuerpo .carta{
+   display: grid;
+   grid-template-rows: minmax(100px, 150px) auto;
+}
+.cuerpo .carta_titulo{
+       width: 100%;
+       height: 100%;
+       background-image: url('../../assets/img/barra_2.svg');
+       background-position: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+.cuerpo .carta .carta_titulo h1{
+    font-family: 'Edo';
+    font-size: 80px;
+    color: var(--gold);
+    font-weight: 300;
+}
+.cuerpo .carta .contenedor-carta{
+   display: flex;
+   flex-direction: column;
+   padding: 100px 300px;
+}
+.cuerpo .contenedor-carta h2{
+   font-family: 'Edo';
+   color: var(--darkBlue);
+   font-size: 40px;
+   border-bottom: 4px solid var(--gold);
+}
+.cuerpo .contenedor-carta .carta-entrantes{
+   display: grid;
+   margin-bottom: 30px;
+}
+.cuerpo .contenedor-carta .carta-entrantes .titulo-seccion-carta{
+   grid-area: 1/1/2/5;
+   place-self: center;
+   margin-bottom: 20px;
+}
+.cuerpo .contenedor-carta .carta-entrantes .carta-plato{
+   padding: 20px;
+   margin: 10px;
+}
+
+.cuerpo .contenedor-carta .carta-entrantes .carta-plato .plato{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: baseline;
+ margin-bottom: 5px;
+}
+.cuerpo .contenedor-carta .carta-entrantes .carta-plato .plato h3{
+   font-size: 17px ;
+}
+.cuerpo .contenedor-carta .carta-entrantes .carta-plato .plato h4{
+   font-size: 16px;
+   margin-left: 5px;
+} 
+.cuerpo .contenedor-carta .carta-entrantes .carta-plato p{
+   font-size: 14px;
+}
+
+ /* --------- LOADING --------- */
+ /* Estilo para la pantalla de carga */
+.carta-loading {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   flex-direction: column;
+   background-color: #f0f0f0;
+   color: #333;
+ }
+ 
+ .loading-spinner {
+   border: 8px solid #f3f3f3;
+   border-top: 8px solid #3498db;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   animation: spin 2s linear infinite;
+ }
+ 
+ @keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+ }
+ 
+ .carta-loading p {
+   margin-top: 10px;
+   font-size: 18px;
+ }
+ 
+
+ /* --------- RESPONSIVE --------- */
+/* --------- RESPONSIVE --------- */
+@media screen and (max-width: 768px) {
+   /* ------ SECTION CARTA ----- */
+   .cuerpo .carta {
+     grid-template-rows: 100px auto;
+   }
+   .cuerpo .carta .carta_titulo h1 {
+     font-size: 35px;
+   }
+   .cuerpo .carta .contenedor-carta {
+     padding: 20px 20px;
+     width: 100%;
+   }
+   .cuerpo .contenedor-carta .carta-entrantes {
+     display: block;
+     margin-bottom: 30px;
+     width: 100%; 
+   }
+   .cuerpo .contenedor-carta .carta-entrantes .carta-plato {
+     padding: 10px; 
+     margin: 5px 0;
+   }
+   .cuerpo .contenedor-carta .carta-entrantes .carta-plato .plato h4 {
+     font-size: 14px;
+     margin-right: 5px;
+   }
+   .cuerpo .contenedor-carta h2 {
+     font-size: 28px;
+   }
+ }
+ 

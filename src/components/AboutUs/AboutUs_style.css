@@ -1,0 +1,125 @@
+/* ------ SECTION ABOUT US ----- */
+.cuerpo .aboutUs {
+   display: grid;
+   grid-template-rows: minmax(100px, 150px) auto; /* Cambio en la altura de las filas */
+}
+
+.cuerpo .aboutUs_titulo {
+   width: 100%;
+   height: 100%;
+   background-image: url('../../assets/img/barra_2.svg');
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cuerpo .aboutUs .aboutUs_titulo h1 {
+   font-family: 'Edo';
+   font-size: 80px;
+   color: var(--gold);
+   font-weight: 300;
+}
+
+.cuerpo .aboutUs .aboutUs_info {
+   display: grid;
+   grid-template-columns: 1fr 1fr 2fr; /* Cambié las columnas para simplificar */
+   grid-template-rows: auto;
+   padding: 50px 10px;
+   padding-bottom: 55px;
+   background-image: url('../../assets/img/fondo_aboutUs.jpg');
+   background-size: cover;
+   background-position: center;
+}
+
+/* Imagen de fondo */
+.cuerpo .aboutUs .aboutUs_info img {
+   grid-area: 1 / 1 / 2 / 3; /* Cambio en la disposición de la imagen */
+   margin: auto;
+   width: 100%;
+   object-fit: cover;
+}
+
+/* Estilo del texto */
+.cuerpo .aboutUs .aboutUs_info .aboutUs_txt {
+   grid-area: 1 / 3 / 2 / 4; /* Cambio en la disposición de la sección de texto */
+   margin: auto;
+   padding: 20px;
+   padding-left: 30px;
+   background-color: rgba(12, 53, 89, 0.4);
+   
+   backdrop-filter: blur(15px);
+   border-radius: 30px;
+   color: white;
+
+}
+
+/* Títulos */
+.cuerpo .aboutUs .aboutUs_info .aboutUs_txt h2,
+.cuerpo .aboutUs .aboutUs_info .aboutUs_txt h4,
+.cuerpo .aboutUs .aboutUs_info .aboutUs_txt h3{
+   font-family: 'Edo';
+   color: var(--gold);
+   letter-spacing: 1px;
+}
+.cuerpo .aboutUs .aboutUs_info .aboutUs_txt strong{
+   color:  var(--lightyellow);
+}
+
+.cuerpo .aboutUs .aboutUs_info .aboutUs_txt h2 {
+   font-size: 50px;
+   margin-bottom: 10px;
+}
+
+.cuerpo .aboutUs .aboutUs_info .aboutUs_txt h4 {
+   font-size: 25px;
+   margin-bottom: 10px;
+}
+
+/* Párrafos */
+.cuerpo .aboutUs .aboutUs_info .aboutUs_txt p {
+   font-size: 1rem;
+   margin-bottom: 0.5rem;
+}
+
+/* --------- RESPONSIVE --------- */
+
+@media screen and (max-width: 768px) {
+
+   /* ------ SECTION ABOUT US ----- */
+   .cuerpo .aboutUs {
+       grid-template-rows: 100px auto; 
+       background-image: url('../../assets/img/fondo_aboutUs.jpg');
+       background-size: cover;
+       background-position: center;
+   }
+
+   .cuerpo .aboutUs .aboutUs_titulo h1 {
+       font-size: 30px;
+   }
+
+   .cuerpo .aboutUs .aboutUs_info {
+       grid-template-columns: 1fr;
+       grid-template-rows: auto;
+   }
+
+   .cuerpo .aboutUs .aboutUs_info .aboutUs_txt {
+       background-color: rgba(0, 0, 0, 0.8);
+       padding: 20px; 
+   }
+
+   .cuerpo .aboutUs .aboutUs_info .aboutUs_txt h2 {
+       color: var(--gold);
+       font-size: 40px;
+   }
+
+   .cuerpo .aboutUs .aboutUs_info .aboutUs_txt h4 {
+       font-size: 20px;
+       color: var(--gold);
+   }
+
+   .cuerpo .aboutUs .aboutUs_info .aboutUs_txt p {
+       font-size: 15px;
+       color: white;
+   }
+}

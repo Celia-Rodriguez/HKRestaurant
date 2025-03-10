@@ -1,0 +1,505 @@
+/* ------ FUENTES ----- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+@font-face {
+   font-family: 'OneBrush';
+   src: url('../fonts/OneBrush.otf');
+}
+@font-face {
+   font-family: 'Edo';
+   src: url('../fonts/edosz.ttf');
+}
+/* ------ COLORES ----- */
+:root{
+   --lightyellow: #fef3a3;
+   --gold: #efd46b;
+   --darkRed: #8c0327;
+   --red: #a60303;
+   --darkBlue: #0c3559;
+   --txtBlack: black;
+}
+/* ------ ESTILOS GLOBALES ----- */
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body{
+   font-family: 'Nunito', sans-serif;
+   color: var(--txtBlack);
+}
+/* ------ CABECERA  ----- */
+.cabecera{
+   height: 90px;
+   background-color: var(--darkBlue);
+   padding: 10px 200px;
+   font-family: 'Edo', sans-serif;
+   box-shadow:  -1px 5px 5px var(--darkBlue);
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
+.cabecera .mainMenu{
+   display: grid;
+   grid-template-columns: 2fr 1fr 2fr;
+  text-align: center;
+}
+.cabecera .mainMenu .nav-links{
+    display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   list-style: none;
+}
+.cabecera .mainMenu .nav-links li{
+   font-size: 1.5rem;
+   font-weight: 400;
+   letter-spacing: 1px;
+}
+.cabecera .mainMenu .nav-links li a{
+   text-decoration: none;
+   color: var(--gold);
+}
+.cabecera .mainMenu .logo{
+   grid-area: 1/2/1/3;
+}
+.cabecera .mainMenu .logo img{
+   cursor: pointer;
+   margin-top: 15px;
+   height: 50px;
+}
+/*  ------ Animaciones cabecera ------ */
+
+.cabecera .mainMenu .nav-links li a:hover{
+   color: var(--lightyellow);
+   font-size: 2rem;
+}
+
+/*MENU RESPONNSIVE*/
+.cabecera .mainMenu-responsive{
+   display: grid;
+   grid-template-columns:  1fr 1fr;
+  text-align: center;
+  display: none;
+}
+.cabecera .mainMenu-responsive .nav-links-responsive{
+    display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   list-style: none;
+}
+.cabecera .mainMenu-responsive .nav-links-responsive li{
+   font-size: 1.5rem;
+   font-weight: 400;
+   letter-spacing: 1px;
+}
+.cabecera .mainMenu-responsive .nav-links-responsive li a{
+   text-decoration: none;
+   color: var(--gold);
+}
+.cabecera .mainMenu-responsive .logo{
+   grid-area: 1/1/1/2;
+}
+.cabecera .mainMenu-responsive .logo img{
+   cursor: pointer;
+   margin-top: 15px;
+   height: 50px;
+}
+
+.cabecera .mainMenu-responsive .navbar-toggle{
+   cursor: pointer;
+   font-size: 40px;
+   color: var(--gold);
+   background-color: transparent;
+   border: none;
+   padding: 0 10px;
+}
+/*  ------ Animaciones cabecera ------ */
+.cabecera .mainMenu-responsive .nav-links-responsive li a:hover{
+   transition: 0.2s;
+   color: var(--lightyellow);
+   font-size: 2rem;
+}
+.cabecera .mainMenu-responsive .navbar-toggle:hover{
+   transform: scale(1.3);
+   transition: 0.2s;
+   color: var(--lightyellow);
+}
+/* ------ MAIN  ----- */
+.cuerpo{
+   display: grid;
+   grid-template-areas:
+   "homePage"
+   "showPlatos"
+   "aboutUs"
+   "situacion";
+   margin-top: 80px;
+}
+/* ------ SECTION HOME PAGE  ----- */
+.cuerpo .homePage .img-homePage{
+   grid-area: 1/1/1/4;
+   width: 100%;
+   height: 100% ;
+   object-fit: cover;
+   z-index: -1;
+}
+.line{
+   width: 100%;
+   background-color: var(--red);
+   height: 10px;
+   margin-top: -8px;
+}
+
+/* ------ SECTION DONDE ESTAMOS ----- */
+.cuerpo .situacion{
+    display: grid;
+    grid-template-rows: minmax(100px, 150px) 800px;
+}
+.cuerpo .situacion_titulo{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/barra_2.svg');
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 8px; */
+}
+.cuerpo .situacion .situacion_titulo h1{
+    font-family: 'Edo';
+    font-size: 80px;
+    color: var(--gold);
+    font-weight: 300;
+}
+.cuerpo .situacion .situacion_contenedor{
+    display: grid;
+    grid-template-columns: 1fr 400px 400px 1fr;
+    grid-template-rows: 50px 150px 100px 50px 80px 100px;
+    padding: 100px 5px;
+    place-items: center;
+}
+.cuerpo .situacion .situacion_contenedor h2{
+    font-family: 'Edo';
+    color: var(--darkBlue);
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.cuerpo .situacion .situacion_contenedor .line_horario{
+   width: 100%;
+   background-color: var(--gold);
+   height: 5px;
+   grid-area: 3/2/3/4;
+}
+.cuerpo .situacion .situacion_contenedor h3, p{
+    margin-bottom: 1rem;
+    margin-top: 10px;
+}
+.situacion_contenedor .horario_titulo{
+    grid-area: 1/2/1/4;
+}
+.cuerpo .situacion .situacion_contenedor .situacion_horario{
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    margin-top: 35px;
+}
+.cuerpo .situacion .situacion_contenedor .LaJ{
+    grid-area: 2/2/2/3;
+}
+.cuerpo .situacion .situacion_contenedor .VaD{
+    grid-area: 2/3/2/4;
+}
+.cuerpo .situacion .situacion_contenedor .opciones_titulo{
+    grid-area:4/2/4/4;
+}
+.cuerpo .situacion .situacion_contenedor .telefono{
+    grid-area: 5/2/5/3;
+
+}
+.cuerpo .situacion .situacion_contenedor .direccion{
+    grid-area: 5/3/5/4;
+}
+/* ------ SECTION RESERVAS ----- */
+.cuerpo .reservas{
+   display: grid;
+   grid-template-rows: minmax(100px, 150px) auto;
+}
+.cuerpo .reservas_titulo{
+   width: 100%;
+   height: 100%;
+   background-image: url('../img/barra_1.svg');
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* margin-top: 8px; */
+}
+.cuerpo .reservas .reservas_titulo h1{
+   font-family: 'Edo';
+   font-size: 80px;
+   color: var(--gold);
+   font-weight: 300;
+}
+.cuerpo .reservas .reservas_contenido {
+   display: flex;
+   flex-direction: column;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   align-items: center;
+}
+.cuerpo .reservas .reservas_contenido .calendario{
+   display: grid;
+   grid-template-columns: 1fr 550px 1fr;
+   grid-template-rows: 50px 50px 300px;
+   font-size: 20px;
+   margin-bottom: 50px;
+}
+.cuerpo .reservas .reservas_contenido .calendario .mes{
+   font-family: 'Edo';
+   color: var(--darkRed);
+   font-size: 25px;
+   border-bottom: 4px solid var(--gold);
+   grid-area: 1/1/1/3;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+.cuerpo .reservas .reservas_contenido .calendario .dias{
+   width: 100%;
+   grid-area: 3/2/3/3;
+   display: grid;
+   grid-template-columns: repeat(7,80px);
+   text-align: center;
+}
+.cuerpo .reservas .reservas_contenido .calendario .dias p{
+   margin: 10px;
+   cursor: pointer;
+}
+.cuerpo .reservas .reservas_contenido .hacer-reservas{
+   /* background-color: var(--lightyellow); */
+   padding: 10px;
+   width: 550px;
+   font-size: 20px;
+}
+.cuerpo .reservas .reservas_contenido .hacer-reservas .datos-rerserva{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: 5px;
+   text-align: center;
+}
+.cuerpo .reservas .reservas_contenido .hacer-reservas p{
+   font-weight: 600;
+   background-color: var(--gold);
+   border-radius: 5px;
+   padding: 15px;
+   width: 150px;
+}
+.cuerpo .reservas .reservas_contenido .hacer-reservas input{
+  padding: 15px;
+  width: 150px;
+}
+.cuerpo .reservas .reservas_contenido .hacer-reservas .datos-rerserva button{
+   padding: 15px;
+   width: 150px;
+   margin: 5px;
+   font-size: 20px;
+   background-color: var(--darkRed);
+   color: var(--lightyellow);
+   border: 2px solid var(--darkBlue);
+   border-radius: 5px;
+   cursor: pointer;
+}
+.cuerpo .reservas .reservas_contenido .hacer-reservas .datos-rerserva button:hover{
+   background-color: var(--darkBlue);
+   color: var(--gold);
+   border: 2px solid var(--darkBlue);
+
+}
+.cuerpo .reservas .reservas_contenido .hacer-reservas .datos-personales{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: left;
+   margin: 15px;
+   text-align: left;
+}
+.cuerpo .reservas .reservas_contenido .hacer-reservas .datos-personales .datos-p{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 5px;
+   align-items: baseline;
+}
+.cuerpo .reservas .reservas_contenido .hacer-reservas .datos-personales .datos-p input{
+   margin: 15px;
+   margin-right: 0;
+   padding: 18px;
+   width: 325px;
+}
+
+
+/* ------ FOOTER ----- */
+.pie{
+   background-color: var(--darkBlue);
+   font-size: 1rem;
+   letter-spacing: 1px;
+   color: var(--gold);
+   height: 200px;
+   display: flex; flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   padding: 50px 50px;
+   border-top: 3px solid #fc7e12;
+}
+.pie img{
+  padding-left: 40px;
+   cursor: pointer;
+   height: 50px;
+}
+.pie .div-pie{
+   margin: auto;
+}
+.pie .div-pie p{
+   cursor: pointer;
+}
+.pie .div-pie p:hover{
+   color: white;
+}
+
+/* --------- RESPONSIVE --------- */
+
+@media screen and (max-width: 768px){
+/* ------ CABECERA  ----- */
+.cabecera{
+   height: 70px;
+   padding: 10px 20px;
+}
+.cabecera .mainMenu{
+   display: none;
+}
+.cabecera .mainMenu-responsive{
+   display: grid;
+}
+.cabecera .mainMenu-responsive .nav-links-responsive li{
+   font-size: 1.2rem;
+   letter-spacing: 1px;
+   margin: 20px 15px;
+}
+.cabecera .mainMenu-responsive .logo img{
+   height: 30px;
+}
+.cabecera .mainMenu-responsive .nav-links-responsive{
+   display: flex;
+   flex-direction: column;
+   background-color: var(--darkBlue);
+   position: fixed;
+   width: 100%;
+   align-items: center;
+   padding: 20px 0;
+   left: -100%; 
+   top: 70px;
+   top: 70px;
+    transition: left 0.3s;
+   z-index: 0; 
+}
+.cabecera .mainMenu-responsive .nav-links-responsive li{
+   line-height: 40px;
+}
+.cabecera .mainMenu-responsive .navbar-toggle{
+   display: block; 
+}
+.cabecera .mainMenu-responsive .nav-links--visible{
+   left: 0;
+}
+/* MAIN*/
+.cuerpo{
+   margin-top: 70px;
+}
+
+/* ------ SECTION DONDE ESTAMOS ----- */
+.cuerpo .situacion{
+   grid-template-rows: 100px auto;
+}
+.cuerpo .situacion .situacion_titulo h1{
+   font-size: 35px;
+}
+.cuerpo .situacion .situacion_contenedor{
+   grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+}
+.cuerpo .situacion .situacion_contenedor h2{
+   font-size: 30px;
+}
+
+.cuerpo .situacion .situacion_contenedor .situacion_horario{
+   font-size: 16px;
+}
+
+/* ------ SECTION RESERVAS ----- */
+.cuerpo .reservas{
+   grid-template-rows: 100px auto;
+}
+.cuerpo .reservas .reservas_titulo h1{
+   font-size: 35px;
+}
+.cuerpo .reservas .reservas_contenido .calendario{
+   grid-template-columns: 0.5fr 1fr 0.5fr;
+   grid-template-rows: 0.5fr 0.5fr 1.5fr;
+   font-size: 20px;
+   margin-bottom: 50px;
+}
+.cuerpo .reservas .reservas_contenido .calendario .mes{
+   grid-area: 1/2/1/3
+}
+
+.cuerpo .reservas .reservas_contenido .calendario .dias{
+   grid-template-columns: repeat(7,50px);
+}
+.cuerpo .reservas .reservas_contenido .hacer-reservas{
+   width: 450px;
+   font-size: 16px;
+}
+.cuerpo .reservas .reservas_contenido .hacer-reservas p{
+   padding: 10px;
+   width: 120px;
+}
+.cuerpo .reservas .reservas_contenido .hacer-reservas input{
+  padding: 10px;
+  width: 120px;
+}
+.cuerpo .reservas .reservas_contenido .hacer-reservas .datos-rerserva button{
+   padding: 10px;
+   width: 120px;
+   font-size: 16px;
+}
+.cuerpo .reservas .reservas_contenido .hacer-reservas .datos-personales .datos-p input{
+   margin: 5px;
+   padding: 10px;
+}
+
+/* ------ FOOTER ----- */
+.pie{
+   margin-top: -8px;
+   background-color: var(--darkBlue);
+   font-size: 1rem;
+   letter-spacing: 1px;
+   color: var(--gold);
+   height: 200px;
+   display: flex; flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   padding: 50px 20px;
+   border-top: 3px solid #fc7e12;
+}
+.pie img{
+   margin: auto;
+    height: 30px;
+    padding-left: 0;
+}
+.pie .div-pie p{
+  font-size: 0.9rem;
+}
+
+}/*RESPONSIVE*/

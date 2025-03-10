@@ -1,0 +1,26 @@
+/* ------ SECTION HOME PAGE  ----- */
+.cuerpo .homePage{
+   display: grid;
+   grid-template-rows: minmax(100px, 413px);
+   grid-template-columns: 1fr 1fr 1fr;
+}
+.cuerpo .img-homePage{
+    grid-area: 1/1/1/4;
+    width: 100%;
+    height: 100% ;
+    object-fit: cover;
+    z-index: -1;
+ }
+/* --------- RESPONSIVE --------- */
+
+@media screen and (max-width: 768px){
+
+   /* ------ SECTION HOME PAGE  ----- */
+
+   .cuerpo .homePage{
+      grid-template-rows: minmax(100px, auto);
+   }
+   .cuerpo .img-homePage{
+      object-fit: center;
+   }
+}

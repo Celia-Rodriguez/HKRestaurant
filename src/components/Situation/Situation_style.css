@@ -1,0 +1,85 @@
+/* ------ SECTION DONDE ESTAMOS ----- */
+.cuerpo .situacion{
+    display: grid;
+    grid-template-rows: minmax(100px, 150px) 800px;
+ }
+ .cuerpo .situacion_titulo{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/img/barra_1.svg');
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .cuerpo .situacion .situacion_titulo h1{
+    font-family: 'Edo';
+    font-size: 80px;
+    color: var(--gold);
+    font-weight: 300;
+ }
+ .cuerpo .situacion .situacion_contenedor{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr ;
+    /* grid-template-rows: 50px 180px 50px 50px 80px; */
+    padding: 100px 5px;
+ }
+ .cuerpo .situacion .situacion_contenedor h2{
+    font-family: 'Edo';
+    color: var(--darkBlue);
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+ }
+ .cuerpo .situacion .situacion_contenedor h3, .cuerpo .situacion .situacion_contenedor p{
+    margin-bottom: 1rem;
+ }
+ .situacion_contenedor .horario_titulo{
+    grid-area: 1/2/1/4;
+ }
+ .cuerpo .situacion .situacion_contenedor .situacion_horario{
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+ }
+ .cuerpo .situacion .situacion_contenedor .LaJ{
+    grid-area: 2/2/2/3;
+ }
+ .cuerpo .situacion .situacion_contenedor .VaD{
+    grid-area: 2/3/2/4;
+ }
+ .cuerpo .situacion .situacion_contenedor .direccion_titulo{
+    grid-area:3/2/4/4;
+ }
+ .cuerpo .situacion .situacion_contenedor .direccion-content{
+    grid-area: 4/2/5/4;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+ }
+
+ /* --------- RESPONSIVE --------- */
+
+@media screen and (max-width: 768px){
+    /* ------ SECTION DONDE ESTAMOS ----- */
+
+.cuerpo .situacion{
+    grid-template-rows: 100px 800px;
+ }
+ .cuerpo .situacion .situacion_titulo h1{
+    font-size: 30px;
+ }
+ .cuerpo .situacion .situacion_contenedor h2{
+    font-size: 30px;
+ }
+ 
+ .cuerpo .situacion .situacion_contenedor .situacion_horario{
+    font-size: 0.9rem;
+    margin-top: 30px;
+ }
+ .cuerpo .situacion .situacion_contenedor .direccion-content{
+    font-size: 0.9rem;
+ }
+
+}

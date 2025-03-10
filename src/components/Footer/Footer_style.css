@@ -1,0 +1,55 @@
+/* ------ FOOTER ----- */
+.pie{
+    margin-top: -8px;
+    background-color: var(--darkBlue);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: var(--gold);
+    height: 200px;
+    display: flex; flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 50px;
+    border-top: 3px solid #fc7e12;
+ }
+ .pie img{
+   padding-left: 40px;
+    cursor: pointer;
+    height: 50px;
+ }
+ .pie .div-pie{
+    margin: auto;
+ }
+ .pie .div-pie p{
+    cursor: pointer;
+    margin-bottom: 1rem;
+ }
+ .pie .div-pie p:hover{
+    color: white;
+ }
+
+/* --------- RESPONSIVE --------- */
+ @media screen and (max-width: 768px){
+    /* ------ FOOTER ----- */
+.pie{
+    margin-top: -8px;
+    background-color: var(--darkBlue);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: var(--gold);
+    height: 200px;
+    display: flex; flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    border-top: 3px solid #fc7e12;
+ }
+ .pie img{
+    margin: auto;
+     height: 30px;
+     padding-left: 0;
+ }
+ .pie .div-pie p{
+   font-size: 0.9rem;
+ }
+ }/*responsive */

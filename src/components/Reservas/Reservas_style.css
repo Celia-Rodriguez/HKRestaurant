@@ -1,0 +1,232 @@
+/* ------ SECTION RESERVAS ----- */
+ .reservas{
+   display: grid;
+   grid-template-rows: minmax(100px, 150px) auto;
+}
+ .reservas_titulo{
+   width: 100%;
+   height: 100%;
+   background-image: url('../../assets/img/barra_1.svg');
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* margin-top: 8px; */
+}
+ .reservas_titulo h1{
+   font-family: 'Edo';
+   font-size: 80px;
+   color: var(--gold);
+   font-weight: 300;
+}
+.reservas_contenido {
+   display: flex;
+   flex-direction: column;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   align-items: center;
+}
+ .calendario{
+   display: grid;
+   grid-template-columns: 1fr 550px 1fr;
+   grid-template-rows: 50px 50px 300px;
+   font-size: 20px;
+   margin-bottom: 50px;
+}
+.calendario .mes{
+   font-family: 'Edo';
+   color: var(--darkRed);
+   font-size: 25px;
+   border-bottom: 4px solid var(--gold);
+   grid-area: 1/1/1/3;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+ .calendario .dias{
+   width: 100%;
+   grid-area: 3/2/3/3;
+   display: grid;
+   grid-template-columns: repeat(7,80px);
+   text-align: center;
+}
+ .dias p{
+   margin: 10px;
+   cursor: pointer;
+}
+ .hacer-reservas{
+   /* background-color: var(--lightyellow); */
+   padding: 10px;
+   width: 550px;
+   font-size: 20px;
+}
+.datos-reserva{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: 5px;
+   text-align: center;
+}
+.hacer-reservas p{
+   font-weight: 600;
+   background-color: var(--gold);
+   border-radius: 5px;
+   padding: 15px;
+   width: 150px;
+}
+ .hacer-reservas input{
+  padding: 15px;
+  width: 150px;
+}
+ .datos-reserva button{
+   padding: 15px;
+   width: 150px;
+   margin: 5px;
+   font-size: 20px;
+   background-color: var(--darkRed);
+   color: var(--lightyellow);
+   border: 2px solid var(--darkBlue);
+   border-radius: 5px;
+   cursor: pointer;
+}
+.datos-reserva button:hover{
+   background-color: var(--darkBlue);
+   color: var(--gold);
+   border: 2px solid var(--darkBlue);
+
+}
+ .datos-personales{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: left;
+   margin: 15px;
+   text-align: left;
+}
+.datos-personales .datos-p{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 5px;
+   align-items: baseline;
+}
+ .datos-personales .datos-p input{
+   margin: 15px;
+   margin-right: 0;
+   padding: 18px;
+   width: 325px;
+}
+
+.hoy {
+   border: 2px solid red;
+   border-radius: 15px;
+   padding: 2px;
+   font-weight: bold;
+ }
+ .dia-semana {
+   font-weight: bold;
+   color: var(--darkBlue);
+   background-color: var(--gold);
+   padding: 5px;
+   text-align: center;
+}
+
+.empty {
+  visibility: hidden; 
+}
+
+/* Estilos para el modal */
+.modal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .modal-contenido {
+   display: flex;
+   flex-direction: column;
+   background: white;
+   padding: 20px;
+   border-radius: 10px;
+   width: 300px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+ }
+
+ .modal-contenido h2 {
+   color: var(--darkBlue);
+   text-align: center;
+ }
+ 
+ .modal-contenido p {
+   margin: 10px 0;
+ }
+ 
+ .modal-contenido button {
+   background: var(--darkRed);
+   color: white;
+   border: none;
+   padding: 10px 15px;
+   margin-top: 10px;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+ 
+ .modal-contenido button:hover {
+   background: var(--lightyellow);
+   color: var(--darkRed);
+ }
+ 
+
+ /* --------- RESPONSIVE --------- */
+
+@media screen and (max-width: 768px){
+
+    /* ------ SECTION RESERVAS ----- */
+ .reservas{
+    grid-template-rows: 100px auto;
+ }
+ .reservas_titulo h1{
+    font-size: 35px;
+ }
+  .calendario{
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 1.5fr;
+    font-size: 20px;
+    margin-bottom: 50px;
+ }
+ .calendario .mes{
+    grid-area: 1/2/1/3
+ }
+ 
+  .reservas .reservas_contenido .calendario .dias{
+    grid-template-columns: repeat(7,50px);
+ }
+  .reservas .reservas_contenido .hacer-reservas{
+    width: 450px;
+    font-size: 16px;
+ }
+  .reservas .reservas_contenido .hacer-reservas p{
+    padding: 10px;
+    width: 120px;
+ }
+  .reservas .reservas_contenido .hacer-reservas input{
+   padding: 10px;
+   width: 120px;
+ }
+  .reservas .reservas_contenido .hacer-reservas .datos-reserva button{
+    padding: 10px;
+    width: 120px;
+    font-size: 16px;
+ }
+  .reservas .reservas_contenido .hacer-reservas .datos-personales .datos-p input{
+    margin: 5px;
+    padding: 10px;
+ }
+
+}

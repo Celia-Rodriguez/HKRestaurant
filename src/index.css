@@ -1,0 +1,83 @@
+/* ------ FUENTES ----- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+@font-face {
+   font-family: 'OneBrush';
+   src: url('./assets/fonts/OneBrush.otf');
+}
+@font-face {
+   font-family: 'Edo';
+   src: url('./assets/fonts/edosz.ttf');
+}
+@font-face {
+   font-family: 'Nunito';
+   src: url('./assets/fonts/NunitoSans.ttf');
+}
+@font-face {
+   font-family: 'Oswald';
+   src: url('./assets/fonts/Oswald.ttf');
+}
+/* ------ COLORES ----- */
+:root{
+   --lightyellow: #fef3a3;
+   --gold: #efd46b;
+   --darkRed: #8c0327;
+   --red: #a60303;
+   --darkBlue: #0c3559;
+   --txtBlack: black;
+}
+/* ------ ESTILOS GLOBALES ----- */
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body{
+   font-family: 'Nunito', sans-serif;
+   color: var(--txtBlack);
+}
+
+/* ------ MAIN  ----- */
+.cuerpo{
+   display: grid;
+   grid-template-areas:
+   "homePage"
+   "showPlatos"
+   "aboutUs"
+   "situacion";
+   margin-top: 80px;
+}
+
+/* ------ SECTION ALERGENOS----- */
+.cuerpo .alergenos{
+   display: grid;
+   grid-template-rows: minmax(200px, auto);
+   place-content: center;
+   /* background-color: var(--lightyellow); */
+}
+.cuerpo .alergenos img{
+   height: 250px;
+}
+
+/* --------- RESPONSIVE --------- */
+
+@media screen and (max-width: 768px){
+
+/* MAIN*/
+.cuerpo{
+   display: block;
+   margin-top: 65px;
+
+}
+
+/* ------ SECTION ALERGENOS----- */
+.cuerpo .alergenos{
+   grid-template-rows: 100px;
+}
+.cuerpo .alergenos img{
+   height: 97%;
+}
+
+}/*responsive */
+
