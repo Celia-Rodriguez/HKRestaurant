@@ -7,7 +7,7 @@ function Carta() {
   const [loading, setLoading] = useState(true); // Estado de carga
 
   useEffect(() => {
-    fetch("/menu.json")
+    fetch("/HKRestaurant/menu.json")
       .then((response) => response.json())
       .then((data) => {
         setMenu(data);
