@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Inicio from "./pages/Inicio";
 import Reservas from "./pages/Reservas";
@@ -9,7 +9,7 @@ import SobreNosotros from "./pages/SobreNosotros";
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
       <ScrollToTop />
       <Routes>
@@ -19,7 +19,7 @@ function App() {
         <Route path="/aboutUs" element={<SobreNosotros />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
 
