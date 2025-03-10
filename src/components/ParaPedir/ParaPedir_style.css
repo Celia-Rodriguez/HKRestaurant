@@ -69,3 +69,25 @@
 .cuerpo .parapedir .parapedir_contenedor .direccion{
     grid-area: 5/3/5/4;
 }
+
+/* --------- RESPONSIVE --------- */
+
+@media screen and (max-width: 768px){
+
+    .cuerpo .parapedir{
+        grid-template-rows: 100px auto;
+     }
+     .cuerpo .parapedir .parapedir_titulo h1{
+        font-size: 35px;
+     }
+     .cuerpo .parapedir .parapedir_contenedor{
+        grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+     }
+     .cuerpo .parapedir .parapedir_contenedor h2{
+        font-size: 30px;
+     }
+     
+     .cuerpo .parapedir .parapedir_contenedor .parapedir_horario{
+        font-size: 16px;
+     }
+}

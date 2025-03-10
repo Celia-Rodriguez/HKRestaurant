@@ -31,9 +31,7 @@
  @media screen and (max-width: 768px){
     /* ------ FOOTER ----- */
 .pie{
-    margin-top: -8px;
     background-color: var(--darkBlue);
-    font-size: 1rem;
     letter-spacing: 1px;
     color: var(--gold);
     height: 200px;
@@ -49,6 +47,6 @@
      padding-left: 0;
  }
  .pie .div-pie p{
-   font-size: 0.9rem;
+   font-size: 0.8rem;
  }
  }/*responsive */
