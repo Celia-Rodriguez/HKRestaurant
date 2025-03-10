@@ -130,7 +130,7 @@
        top: 70px;
        top: 70px;
         transition: left 0.3s;
-       z-index: 0; 
+       z-index: 3; 
     }
     .cabecera .mainMenu-responsive .nav-links-responsive li{
        line-height: 40px;
