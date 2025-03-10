@@ -1,0 +1,602 @@
+[
+  {
+    "categoria": "Entrantes",
+    "platos": [
+      {
+        "nombre": "Ensalada China",
+        "precio": "4,40€",
+        "alergenos": ["Soja (6)"]
+      },
+      {
+        "nombre": "Ensalada Brotes de Soja",
+        "precio": "5,00€",
+        "alergenos": ["Soja (6)"]
+      },
+      {
+        "nombre": "Ensalada de Gambas",
+        "precio": "6,10€",
+        "alergenos": ["Soja (6)", "Mariscos (2)", "Pescado (4)"]
+      },
+      {
+        "nombre": "Ensalada Especial",
+        "precio": "4,20€",
+        "alergenos": ["Soja (6)", "Crustáceos (2)", "Pescado (4)"]
+      },
+      {
+        "nombre": "Rollitos Vietnamitas (4 UD)",
+        "precio": "4,20€",
+        "alergenos": ["Gluten (1)"]
+      },
+      {
+        "nombre": "Rollo de Primavera",
+        "precio": "1,95€",
+        "alergenos": ["Gluten (1)"]
+      },
+      {
+        "nombre": "Cook-tail de Gambas",
+        "precio": "6,25€",
+        "alergenos": ["Crustáceos (2)"]
+      },
+      {
+        "nombre": "Wan-tun Frito",
+        "precio": "4,40€",
+        "alergenos": ["Gluten (1)"]
+      },
+      {
+        "nombre": "Patatas Fritas",
+        "precio": "3,60€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Pan Chino",
+        "precio": "1,45€",
+        "alergenos": ["Gluten (1)"]
+      },
+      {
+        "nombre": "Tortilla Francesa",
+        "precio": "4,35€",
+        "alergenos": ["Huevo (3)"]
+      },
+      {
+        "nombre": "Chop Suey de Verduras",
+        "precio": "5,45€",
+        "alergenos": ["Soja (6)"]
+      },
+      {
+        "nombre": "Brotes de Soja Fritos",
+        "precio": "5,45€",
+        "alergenos": ["Soja (6)"]
+      },
+      {
+        "nombre": "Huevo Revuelto con Gambas",
+        "precio": "6,55€",
+        "alergenos": ["Crustáceos (2)", "Huevo (3)", "Pescado (4)"]
+      },
+      {
+        "nombre": "Huevos Revueltos con Jamón",
+        "precio": "5,20€",
+        "alergenos": ["Huevo (3)"]
+      },
+      {
+        "nombre": "Bambú y Setas Chinas Salteadas",
+        "precio": "6,25€",
+        "alergenos": []
+      }
+    ]
+  },
+  {
+    "categoria": "Sopas",
+  "platos": [
+    {
+      "nombre": "Consomé",
+      "precio": "3,30€",
+      "alergenos": []
+    },
+    {
+      "nombre": "Sopa de Huevo Revuelto",
+      "precio": "3,50€",
+      "alergenos": ["Huevo (3)"]
+    },
+    {
+      "nombre": "Sopa de Pollo con Champiñones",
+      "precio": "3,70€",
+      "alergenos": []
+    },
+    {
+      "nombre": "Sopa Agripicante",
+      "precio": "3,80€",
+      "alergenos": ["Huevo (3)", "Soja (6)"]
+    },
+    {
+      "nombre": "Sopa de Wan-tun",
+      "precio": "3,80€",
+      "alergenos": ["Gluten (1)"]
+    },
+    {
+      "nombre": "Sopa de Maíz con Pollo",
+      "precio": "3,70€",
+      "alergenos": ["Huevo (3)"]
+    },
+    {
+      "nombre": "Sopa de Maíz y Carne de Cangrejo",
+      "precio": "3,80€",
+      "alergenos": ["Crustáceos (2)", "Huevo (3)"]
+    },
+    {
+      "nombre": "Sopa de Aletas de Tiburón",
+      "precio": "4,05€",
+      "alergenos": ["Huevo (3)", "Pescado (4)"]
+    },
+    {
+      "nombre": "Sopa de Tres Delicias con Chai Chai",
+      "precio": "3,90€",
+      "alergenos": []
+    },
+    {
+      "nombre": "Sopa de Marisco",
+      "precio": "4,35€",
+      "alergenos": ["Crustáceos (2)", "Pescado (4)"]
+    }
+  ]
+  },
+  {
+    "categoria": "Arroz y Tallarines",
+    "platos": [
+      {
+        "nombre": "Arroz Frito Tres Delicias",
+        "precio": "4,95€",
+        "alergenos": ["Huevo (3)"]
+      },
+      {
+        "nombre": "Arroz Frito con Pollo",
+        "precio": "5,20€",
+        "alergenos": ["Huevo (3)"]
+      },
+      {
+        "nombre": "Arroz Frito con Gambas",
+        "precio": "5,75€",
+        "alergenos": ["Crustáceos (2)", "Huevo (3)", "Pescado (4)"]
+      },
+      {
+        "nombre": "Arroz Frito Especial de la Casa",
+        "precio": "6,65€",
+        "alergenos": ["Crustáceos (2)", "Huevo (3)", "Pescado (4)"]
+      },
+      {
+        "nombre": "Arroz con Gambas al Curry",
+        "precio": "6,20€",
+        "alergenos": ["Crustáceos (2)", "Pescado (4)"]
+      },
+      {
+        "nombre": "Arroz con Ternera al Curry",
+        "precio": "6,10€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Arroz con Pollo al Curry",
+        "precio": "6,10€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Arroz Blanco",
+        "precio": "2,80€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Tallarines Fritos Tres Delicias",
+        "precio": "6,20€",
+        "alergenos": ["Gluten (1)", "Crustáceos (2)", "Soja (6)"]
+      },
+      {
+        "nombre": "Tallarines Fritos con Gambas",
+        "precio": "6,55€",
+        "alergenos": ["Gluten (1)", "Crustáceos (2)", "Pescado (4)", "Soja (6)"]
+      },
+      {
+        "nombre": "Tallarines Fritos con Ternera",
+        "precio": "6,15€",
+        "alergenos": ["Gluten (1)", "Soja (6)"]
+      },
+      {
+        "nombre": "Tallarines Fritos con Pollo",
+        "precio": "6,15€",
+        "alergenos": ["Gluten (1)", "Soja (6)"]
+      }
+    ]
+  },
+  {
+    "categoria": "Mariscos",
+  "platos": [
+    {
+      "nombre": "Langostinos Fritos",
+      "precio": "9,55€",
+      "alergenos": ["Crustáceos (2)"]
+    },
+    {
+      "nombre": "Gambas con Bambú y Setas",
+      "precio": "9,55€",
+      "alergenos": ["Crustáceos (2)"]
+    },
+    {
+      "nombre": "Gambas al Estilo Mandarín",
+      "precio": "9,55€",
+      "alergenos": ["Crustáceos (2)"]
+    },
+    {
+      "nombre": "Gambas con Salsa Curry",
+      "precio": "9,55€",
+      "alergenos": ["Crustáceos (2)"]
+    },
+    {
+      "nombre": "Gambas Kung-Pao (picante)",
+      "precio": "9,55€",
+      "alergenos": ["Crustáceos (2)"]
+    },
+    {
+      "nombre": "Gambas con Salsa Agridulce",
+      "precio": "9,55€",
+      "alergenos": ["Gluten (1)", "Crustáceos (2)"]
+    },
+    {
+      "nombre": "Gambas con Brotes de Soja",
+      "precio": "9,55€",
+      "alergenos": ["Crustáceos (2)", "Soja (6)"]
+    },
+    {
+      "nombre": "Chop Suey de Gambas",
+      "precio": "9,55€",
+      "alergenos": ["Crustáceos (2)", "Soja (6)"]
+    },
+    {
+      "nombre": "Gambas Fritas",
+      "precio": "9,80€",
+      "alergenos": ["Gluten (1)", "Crustáceos (2)"]
+    },
+    {
+      "nombre": "Calamares con Salsa Picante",
+      "precio": "7,45€",
+      "alergenos": ["Crustáceos (2)", "Moluscos (13)"]
+    },
+    {
+      "nombre": "Calamares con Bambú y Setas",
+      "precio": "7,45€",
+      "alergenos": ["Moluscos (13)"]
+    },
+    {
+      "nombre": "Pescado con Bambú y Setas",
+      "precio": "7,45€",
+      "alergenos": ["Gluten (1)", "Pescado (4)"]
+    },
+    {
+      "nombre": "Pescado con Salsa Agridulce",
+      "precio": "7,45€",
+      "alergenos": ["Gluten (1)", "Pescado (4)"]
+    },
+    {
+      "nombre": "Pescado Frito",
+      "precio": "7,45€",
+      "alergenos": ["Gluten (1)", "Pescado (4)"]
+    }
+  ]
+  },
+  {
+    "categoria": "Ternera",
+    "platos": [
+      {
+        "nombre": "Ternera con Bambú y Setas Chinas",
+        "precio": "7,75€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Ternera con Salsa de Ostras",
+        "precio": "7,15€",
+        "alergenos": ["Moluscos (13)"]
+      },
+      {
+        "nombre": "Ternera con Champiñones",
+        "precio": "7,15€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Ternera con Piña",
+        "precio": "7,15€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Ternera con Salsa Picante",
+        "precio": "7,15€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Ternera con Salsa de Curry",
+        "precio": "7,15€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Ternera con Cebolla",
+        "precio": "7,15€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Ternera con Pimientos Verdes",
+        "precio": "7,15€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Ternera con Tomate",
+        "precio": "7,15€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Ternera con Brotes de Soja",
+        "precio": "7,15€",
+        "alergenos": ["Soja (6)"]
+      },
+      {
+        "nombre": "Chop Suey de Ternera",
+        "precio": "7,15€",
+        "alergenos": ["Soja (6)"]
+      },
+      {
+        "nombre": "Ternera con Patatas Fritas",
+        "precio": "7,50€",
+        "alergenos": []
+      }
+    ]
+  },
+  {
+    "categoria": "Pollo",
+    "platos": [
+      {
+        "nombre": "Pollo con Bambú y Setas Chinas",
+        "precio": "7,25€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Bolas de Pollo Frito",
+        "precio": "6,85€",
+        "alergenos": ["Gluten (1)", "Huevos (3)"]
+      },
+      {
+        "nombre": "Pollo Empanado con Patatas",
+        "precio": "8,60€",
+        "alergenos": ["Gluten (1)"]
+      },
+      {
+        "nombre": "Pollo Kung-Pao (picante)",
+        "precio": "6,85€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Pollo con Almendras",
+        "precio": "6,85€",
+        "alergenos": ["Frutos Secos (8)"]
+      },
+      {
+        "nombre": "Pollo Almendrado",
+        "precio": "8,90€",
+        "alergenos": ["Gluten (1)", "Frutos Secos (8)"]
+      },
+      {
+        "nombre": "Pollo con Salsa de Curry",
+        "precio": "6,85€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Pollo con Piña",
+        "precio": "6,85€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Pollo con Limón",
+        "precio": "7,15€",
+        "alergenos": ["Gluten (1)"]
+      },
+      {
+        "nombre": "Pollo con Champiñones",
+        "precio": "6,85€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Pollo con Salsa Agridulce",
+        "precio": "6,85€",
+        "alergenos": ["Gluten (1)"]
+      },
+      {
+        "nombre": "Pollo con Salsa de Ostras",
+        "precio": "6,85€",
+        "alergenos": ["Moluscos (13)"]
+      },
+      {
+        "nombre": "Pollo con Brotes de Soja",
+        "precio": "6,85€",
+        "alergenos": ["Soja (6)"]
+      },
+      {
+        "nombre": "Chop Suey de Pollo",
+        "precio": "6,85€",
+        "alergenos": ["Soja (6)"]
+      }
+    ]
+  },
+  {
+    "categoria": "Cerdo y Pato",
+    "platos": [
+      {
+        "nombre": "Cerdo con Bambú y Setas Chinas",
+        "precio": "7,65€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Cerdo con Salsa Agridulce",
+        "precio": "6,85€",
+        "alergenos": ["Gluten (1)"]
+      },
+      {
+        "nombre": "Cerdo con Guindillas",
+        "precio": "6,65€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Cerdo con Salsa de Curry",
+        "precio": "6,65€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Cerdo con Brotes de Soja",
+        "precio": "6,65€",
+        "alergenos": ["Soja (6)"]
+      },
+      {
+        "nombre": "Chop Suey de Cerdo",
+        "precio": "6,65€",
+        "alergenos": ["Soja (6)"]
+      },
+      {
+        "nombre": "Cerdo con Champiñones",
+        "precio": "6,65€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Costillas con Salsa Agridulce",
+        "precio": "8,80€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Costillas Asadas a la Cantonesa",
+        "precio": "9,30€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Pato de Pekín",
+        "precio": "15,00€",
+        "alergenos": ["Gluten (1)", "Moluscos (13)"]
+      },
+      {
+        "nombre": "Pato con Bambú y Setas Chinas",
+        "precio": "10,95€",
+        "alergenos": ["Gluten (1)"]
+      },
+      {
+        "nombre": "Pato con Piña",
+        "precio": "10,95€",
+        "alergenos": ["Gluten (1)"]
+      },
+      {
+        "nombre": "Pato al Limón",
+        "precio": "10,95€",
+        "alergenos": ["Gluten (1)"]
+      },
+      {
+        "nombre": "Pato a la Naranja",
+        "precio": "10,95€",
+        "alergenos": ["Gluten (1)"]
+      }
+    ]
+  },
+  {
+    "categoria": "Platos Especiales",
+    "platos": [
+      {
+        "nombre": "Entremese Variados",
+        "precio": "9,45€",
+        "alergenos": ["Gluten (1)", "Crustáceos (2)", "Pescado (4)"]
+      },
+      {
+        "nombre": "Gambas Especiales de la Casa",
+        "precio": "10,55€",
+        "alergenos": ["Crustáceos (2)"]
+      },
+      {
+        "nombre": "Ternera Especial de la Casa",
+        "precio": "9,45€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Pollo Especial de la Casa",
+        "precio": "9,45€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Ku Bakc con Tres Delicias",
+        "precio": "9,35€",
+        "alergenos": ["Crustáceos (2)", "Pescado (4)"]
+      },
+      {
+        "nombre": "Ku Bakc con Cangrejos y Gambas",
+        "precio": "9,90€",
+        "alergenos": ["Crustáceos (2)", "Pescado (4)"]
+      },
+      {
+        "nombre": "Familia Feliz",
+        "precio": "10,30€",
+        "alergenos": ["Crustáceos (2)", "Pescado (4)"]
+      },
+      {
+        "nombre": "Ternera Agripicante de la Casa",
+        "precio": "9,20€",
+        "alergenos": ["Gluten (1)"]
+      },
+      {
+        "nombre": "Pollo Salteado con Soja Negra",
+        "precio": "7,50€",
+        "alergenos": ["Soja (6)"]
+      },
+      {
+        "nombre": "Gambas con Salsa de Sa-Te",
+        "precio": "10,55€",
+        "alergenos": ["Crustáceos (2)", "Pescado (4)"]
+      },
+      {
+        "nombre": "Ternera con Salsa de Sa-Te",
+        "precio": "9,45€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Pollo con Salsa de Sa-Te",
+        "precio": "9,45€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Dow-Fu de la Casa",
+        "precio": "8,00€",
+        "alergenos": ["Soja (6)"]
+      },
+      {
+        "nombre": "Ternera con Gambas a la Plancha",
+        "precio": "8,00€",
+        "alergenos": ["Crustáceos (2)"]
+      },
+      {
+        "nombre": "Pollo con Gambas a la Plancha",
+        "precio": "8,00€",
+        "alergenos": ["Crustáceos (2)"]
+      },
+      {
+        "nombre": "Empanadillas Chinas a la Plancha/Al Vapor",
+        "precio": "7,50€",
+        "alergenos": []
+      },
+      {
+        "nombre": "Tallarines Chinos a la Plancha",
+        "precio": "8,35€",
+        "alergenos": ["Crustáceos (2)", "Huevos (3)", "Pescado (4)", "Soja (6)"]
+      },
+      {
+        "nombre": "Fideos Chinos Tres Delicias",
+        "precio": "8,10€",
+        "alergenos": ["Crustáceos (2)", "Huevos (3)", "Pescado (4)", "Soja (6)"]
+      },
+      {
+        "nombre": "Fideos Chinos con Gambas",
+        "precio": "8,55€",
+        "alergenos": ["Crustáceos (2)", "Huevos (3)", "Pescado (4)", "Soja (6)"]
+      },
+      {
+        "nombre": "Hormigas Suben al Árbol",
+        "precio": "9,15€",
+        "alergenos": []
+      }
+    ]
+  }
+]
